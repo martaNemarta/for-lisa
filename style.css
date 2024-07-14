@@ -1,0 +1,91 @@
+body{
+    background-image: url(art.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#FFF9CA ;
+}
+#container{
+    background-color:#ECA869; 
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 725px;
+    border-radius:40px;    
+    border: solid 1px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    padding:20px;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+    color: #fff;
+}
+input{
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+}
+#addTip{
+    background-color: #B5D5C5;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+#btn{
+    background-color:#F1F7B5;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+#tip{
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+#amount{
+    display: flex;
+}
+#billSplit,#totalTip,#totalBill{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#FD8A8A ; 
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+.anim{
+    background-color:#fff;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 15px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    font-family: 'Montserrat', sans-serif;
+}
+@media all and (max-width : 800px){
+    #container{
+        margin-right: 80px;
+        width: 350px;
+        flex-wrap: nowrap;
+    }
+    #billSplit,#totalTip,#totalBill{
+        margin-right:10px;
+        padding: 5px;
+        margin-bottom: 2px;
+    }
+    .anim{
+        margin-bottom: 30px;
+        padding: 2px;
+    }
+}

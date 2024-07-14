@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Let's Split our happines!</h1>
+        <form>
+            <p> Amount of smiles appear when we see you</p>
+            <span> 💌
+                <input type="text" id="bill" placeholder="myraid, I beleive">
+            </span>
+            <p>Number of people</p>
+           <span>🧑‍🎓
+            <input type="text" placeholder="How many people?" id="people">
+           </span>
+            <p>💗 Add some % of good energy💗</p>
+            <button id="addTip">Add a tip!</button>
+            <select id="tip">
+                <option disabled>Select an option</option>
+                <option value="0.30" >All the murdering scenes in Macbeth were funny 30%💗</option>
+                <option value="0.20">I love spelling tests 20%💙</option>
+                <option value="0.10" >All these language devices are fun too...maybe 10% </option>
+            </select>
+            <button id="btn">Calculate</button>
+        </form>
+        <div id="amount">
+            <div id="billSplit">
+                <p>Points of happines</p>
+                <span>⭐</span>
+                <span id="dividedBill"></span>
+                <span>per person</span>
+            </div>
+            <div id="totalTip">
+                <p>Extra joy</p>
+                <span>⭐</span>
+                <span id="dividedTip"></span>
+                <span>per person</span>
+            </div>
+
+            <div id="totalBill">
+                <p>Total</p>
+                <span>⭐</span>
+                <span id="BillAndTip"></span>
+                <span>per person</span>
+            </div>
+        </div>
+        <button class="anim">Tap me!</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
